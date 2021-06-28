@@ -1,0 +1,97 @@
+<!-- tab should first start form the page title, 
+  then navigation links, then hero image, then main content, then search box,
+   then side content, then footer  
+  
+   make sure you state the guidelines each that you implemented
+  -->
+
+<html lang="en"> <!--level A guideline3.1.1  language of page-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Welcome to Acme Web Design!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We build and design the best sites!" />
+
+  <link href="css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="header" >
+    <span class="header-title">Acme Web Design, we are the best!</span> <!--guideline 1.4.4 every page should have only
+    one h1 tag and it should be the first element-->
+    <a class="skip-link" href="#main">Skip to main</a>
+    <nav class="wrapper" aria-label="header"> <!-- aria-label="header"  give context to the user-->
+      <img class="header-logo" src="images/logo.png" alt="header logo" />
+      <form action="/search" method="POST" role="search"> <!-- role = search. level AA 2.4.5 MULTIPLE WAYS: more than one way is available to locate a web page.--->
+        <input id="query" type="search" />
+        <button>Search</button>
+      </form>
+    </nav>
+    <button id="menu-trigger" type="button">Menu</button>
+  </header>
+
+  <nav id="main-nav" class="navigation" aria-label="site" > <!-- aria-label="site"  give context to the user-->
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <img src="images/home-header.png" width="1280" height="360"/>
+  </div>
+
+  <div id="wrapper">
+    <main id="main" class="main" > 
+      <h1>Welcome to Acme Web Design!</h1> <!--guideline 1.4.4 every page should have only
+        one h1 tag and it should be the first element and closing tags properly-->
+      <h2>
+        Acme makes the best web sites. There is nobody better. Please take the time to read about our awesome company.
+      </h2>
+
+      <h2>How to make an awesome website</h2>
+      <ol>
+        <li>Find examples of other sites you like</li>
+        <li>Gather any pictures or graphics you like</li>
+        <li>Contact Acme Web Design</li>
+        <li>Get an awesome domain name</li>
+        <li>Get an awesome web host</li>
+      </ol>
+
+    </main>
+
+    <aside class="sidebar">
+      <nav class="navigation" aria-label="page"> <!-- aria-label="page"  give context to the user-->
+        <ul>
+          <li><a href="link1.html">Sub Link 1</a></li>
+          <li><a href="link2.html">Sub Link 2</a></li>
+          <li><a href="link3.html">Sub Link 3</a></li>
+          <li><a href="link4.html">Sub Link 4</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <nav class="navigation" aria-label="site"> <!-- aria-label="site"  give context to the user-->
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <p>Copyright 2016, All rights reserved.</p><!--changed paragraphs to headings-->
+    <p>Best if viewed on my monitor</p>
+    <p><a href="sitemap.html">Map</a></p>
+  </footer>
+  <script src="js/navigation.js"></script>
+</body>
+
+</html>
